@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Direct Gov Test Suite" thread-count="2" parallel="tests">
+
+  <test name="good-cents-test - Firefox">
+    <parameter name="browser_type" value="firefox"/>
+    <classes>
+      <class name="com.goodcentstest.test.GoodCents"/>
+    </classes>
+  </test>
+
+   <test name="good-cents-test - Chrome">
+    <parameter name="browser_type" value="chrome"/>
+    <classes>
+      <class name="com.goodcentstest.test.GoodCents"/>
+    </classes>
+  </test> 
+
+</suite>
